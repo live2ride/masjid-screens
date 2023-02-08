@@ -1,0 +1,20 @@
+// eslint-disable
+import { LazyMotion } from "framer-motion";
+
+// ----------------------------------------------------------------------
+
+// @ts-ignore
+const loadFeatures = () => import("./features.js").then((res) => res.default);
+
+type Props = {
+  children: React.ReactNode;
+};
+
+export default function MotionLazyContainer({ children }: Props) {
+  return (
+    <LazyMotion strict features={loadFeatures}>
+      {/* <m.div style={{ height: "100%" }}> {children} </m.div> */}
+      {children}
+    </LazyMotion>
+  );
+}
