@@ -16,6 +16,7 @@ const TitleWithLogo = () => {
       }}
     >
       <Avatar
+        variant="rounded"
         sx={{ width: "70%", height: "auto", maxWith: "200px" }}
         src={logo}
       />

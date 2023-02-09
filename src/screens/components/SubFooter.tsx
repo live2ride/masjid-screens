@@ -8,7 +8,7 @@ import TextAnimate from "src/screens/motion/TextAnimate";
 import { useScreensContext } from "src/screens/ScreensContext";
 const AvatarSX = {
   alignSelf: "center",
-  width: "70px",
+  width: "auto",
   height: "70px",
 };
 const SubFooter = () => {
@@ -26,7 +26,7 @@ const SubFooter = () => {
       }}
       spacing={2}
     >
-      <Avatar src={logo} sx={AvatarSX} />
+      <Avatar src={logo} sx={AvatarSX} variant="rounded" />
 
       <Box
         sx={{
@@ -40,7 +40,7 @@ const SubFooter = () => {
         <SubFooterMessages />
       </Box>
 
-      <Avatar src={defaultLogo} sx={AvatarSX} />
+      <Avatar src={defaultLogo} sx={AvatarSX} variant="rounded" />
     </Stack>
   );
 };

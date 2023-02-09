@@ -1,15 +1,10 @@
-import { Avatar, Box, Button, Stack } from "@mui/material";
-import Container from "@mui/material/Container";
-import { SxProps } from "@mui/material/styles";
+import { Box } from "@mui/material";
 import Typography from "@mui/material/Typography";
-import _ from "lodash";
-import { get, map, set } from "lodash";
-import { Component, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { IconButton } from "src/core/components/icon";
 import ScreensMenu from "src/screens/components/ScreensMenu";
 import ScreenComponent, { ComponentType } from "src/screens/ScreenComponent";
 import { ScreensProvider } from "src/screens/ScreensContext";
-import { MOCK, ScreensData } from "./types";
 
 const OPTIONS = [
   "sidebar",
@@ -48,7 +43,7 @@ const defaultState: StateProps = {
     main2: "Title",
     main3: "TitleWithLogo",
     footer: "PrayerTimesDefault",
-    subfooter: "SlidingFooter",
+    subfooter: "SubFooter",
   },
 };
 

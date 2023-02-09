@@ -1,6 +1,6 @@
 export const MOCK: ScreensData = {
-  title: "Islamic Center of Daytona Beach",
-  logo: "https://d.masjidplus.com/public/image/thumbnail/007488EE-860E-EB11-96B2-000C296F23D0.webp",
+  title: "Islamic Center of Some Place",
+  logo: "https://masjidplus.com/public/default/default.png",
   defaultLogo: "https://masjidplus.com/public/default/default.png",
   url: "https://masjidplus.com",
   prayerTimes: [

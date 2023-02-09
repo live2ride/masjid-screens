@@ -1,9 +1,9 @@
 import Typography from "@mui/material/Typography";
 import PrayerTimesDefault from "src/screens/components/PrayerTimesDefault";
-import { SlidingFooter, Title, TitleWithLogo } from "./components";
+import { SubFooter, Title, TitleWithLogo } from "./components";
 import { ErrorBoundary } from "react-error-boundary";
 import { Suspense } from "react";
-const NA = ({ header }: any) => {
+const NA = () => {
   return (
     <Typography variant="h3" component={"h1"} textAlign="center" sx={{}}>
       {"This component is not available"}
@@ -18,7 +18,7 @@ function ErrorFallback() {
 export const COMPONENTS = {
   Title: Title,
   TitleWithLogo: TitleWithLogo,
-  SlidingFooter: SlidingFooter,
+  SubFooter: SubFooter,
   PrayerTimesDefault: PrayerTimesDefault,
 };
 export const ComponentsList = Object.keys(COMPONENTS);
